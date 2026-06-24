@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landpage Institucional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Bem-vindo à Nossa Iniciativa</h1>
+      <p>Conectando pessoas e oferecendo apoio para um futuro melhor.</p>
+      <a class="button" href="#contato">Fale Conosco</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre" class="section section-light">
+      <div class="container">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma organização dedicada a transformar vidas por meio de ações sociais, educação e inclusão.</p>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section-dark">
+      <div class="container">
+        <h2>O que fazemos</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Educação</h3>
+            <p>Programas educativos para crianças, jovens e adultos, com foco em capacitação e cidadania.</p>
+          </article>
+          <article class="card">
+            <h3>Saúde</h3>
+            <p>Atendimentos e campanhas de saúde preventiva voltadas para comunidades em vulnerabilidade.</p>
+          </article>
+          <article class="card">
+            <h3>Voluntariado</h3>
+            <p>Oportunidades para quem deseja doar tempo e fazer a diferença no dia a dia de muitas famílias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impacto" class="section section-light">
+      <div class="container">
+        <h2>Nosso Impacto</h2>
+        <p>Mais de 500 famílias beneficiadas, oficinas realizadas e muitas histórias de superação compartilhadas.</p>
+        <div class="stats">
+          <div>
+            <strong>500+</strong>
+            <span>Beneficiados</span>
+          </div>
+          <div>
+            <strong>120</strong>
+            <span>Projetos</span>
+          </div>
+          <div>
+            <strong>30</strong>
+            <span>Parceiros</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section section-dark">
+      <div class="container">
+        <h2>Depoimentos</h2>
+        <p>“A equipe nos apoiou com muito carinho e abriu portas para novas oportunidades.”</p>
+        <p class="author">— Maria, participante do projeto</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-light">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato para saber como participar, apoiar ou fazer uma doação.</p>
+        <form id="contact-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+        <p id="form-status" class="form-status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Nossa Iniciativa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
