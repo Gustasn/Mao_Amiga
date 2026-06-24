@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Smooth scroll para "Fale Conosco"
+  const contactButton = document.querySelector('a[href="#contato"]');
+  if (contactButton) {
+    contactButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      const contactSection = document.getElementById("contato");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
 
