@@ -3,99 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landpage Institucional</title>
+  <title>Ministério Mãos Amigas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Mão Amiga</h1>
-      <p>Conectando pessoas e oferecendo apoio para um futuro melhor.</p>
-      <a class="button" href="#contato">Fale Conosco</a>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <h1>MÃOS AMIGAS</h1>
+        <p class="tagline">Estender a mão é refletir o amor de Cristo</p>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="como-ajudar.html">Como Ajudar</a>
+        <a href="#valores">Valores</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section id="sobre" class="section section-light">
-      <div class="container">
-        <h2>Sobre N�s</h2>
-        <p>Somos uma organiza��o dedicada a transformar vidas por meio de a��es sociais, educa��o e inclus�o.</p>
-      </div>
-    </section>
-
-    <section id="servicos" class="section section-dark">
-      <div class="container">
-        <h2>O que fazemos</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Educa��o</h3>
-            <p>Programas educativos para crian�as, jovens e adultos, com foco em capacita��o e cidadania.</p>
-          </article>
-          <article class="card">
-            <h3>Sa�de</h3>
-            <p>Atendimentos e campanhas de sa�de preventiva voltadas para comunidades em vulnerabilidade.</p>
-          </article>
-          <article class="card">
-            <h3>Voluntariado</h3>
-            <p>Oportunidades para quem deseja doar tempo e fazer a diferen�a no dia a dia de muitas fam�lias.</p>
-          </article>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>Bem-vindo ao Ministério Mãos Amigas</h2>
+          <p>Não é só doar, é se disponibilizar. Venha fazer parte!</p>
+          <a href="como-ajudar.html" class="button button-primary">Saiba Como Ajudar</a>
         </div>
       </div>
     </section>
 
-    <section id="impacto" class="section section-light">
+    <section id="valores" class="section valores-section">
       <div class="container">
-        <h2>Nosso Impacto</h2>
-        <p>Mais de 500 fam�lias beneficiadas, oficinas realizadas e muitas hist�rias de supera��o compartilhadas.</p>
-        <div class="stats">
-          <div>
-            <strong>500+</strong>
-            <span>Beneficiados</span>
+        <h2>Nossos Valores</h2>
+        <div class="valores-grid">
+          <div class="valor">
+            <div class="valor-icon">❤️</div>
+            <h3>AMOR</h3>
           </div>
-          <div>
-            <strong>120</strong>
-            <span>Projetos</span>
+          <div class="valor">
+            <div class="valor-icon">🤝</div>
+            <h3>CUIDADO</h3>
           </div>
-          <div>
-            <strong>30</strong>
-            <span>Parceiros</span>
+          <div class="valor">
+            <div class="valor-icon">✋</div>
+            <h3>SERVIÇO</h3>
+          </div>
+          <div class="valor">
+            <div class="valor-icon">✨</div>
+            <h3>TRANSFORMAÇÃO</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="depoimentos" class="section section-dark">
+    <section class="section missao-section">
       <div class="container">
-        <h2>Depoimentos</h2>
-        <p>�A equipe nos apoiou com muito carinho e abriu portas para novas oportunidades.�</p>
-        <p class="author">� Maria, participante do projeto</p>
+        <h2>Nossa Missão</h2>
+        <p>Somos uma organização cristã dedicada a servir as comunidades em vulnerabilidade, oferecendo apoio prático e espiritual. Através de ações sociais, educação e inclusão, buscamos transformar vidas e devolver esperança e dignidade às famílias que nos procuram.</p>
       </div>
     </section>
 
-    <section id="contato" class="section section-light">
+    <section id="contato" class="section contato-section">
       <div class="container">
-        <h2>Contato</h2>
-        <p>Entre em contato para saber como participar, apoiar ou fazer uma doa��o.</p>
-        <form id="contact-form">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" placeholder="Seu nome" required>
-
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
-
-          <button type="submit">Enviar Mensagem</button>
-        </form>
-        <p id="form-status" class="form-status"></p>
+        <h2>Entre em Contato</h2>
+        <p>Quer conhecer mais sobre nossas ações ou tem alguma dúvida? Entre no nosso grupo do WhatsApp!</p>
+        <a href="https://chat.whatsapp.com/C3V4NFegIQi0UpoTPpqUge" class="button button-whatsapp" target="_blank">
+          💬 Entrar no Grupo WhatsApp
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>� 2026 Nossa Iniciativa. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Ministério Mãos Amigas. Todos os direitos reservados.</p>
+      <p class="footer-tagline">Refletindo o amor de Cristo em ações solidárias</p>
     </div>
   </footer>
 
