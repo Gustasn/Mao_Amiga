@@ -54,6 +54,25 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3.5rem;
+  margin-left: 0;
+}
+
+.header .container {
+  padding-left: 1.75rem;
+  padding-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.logo-img {
+  width: 56px;
+  height: auto;
+  object-fit: contain;
 }
 
 .logo h1 {
@@ -74,6 +93,8 @@ a {
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  margin-left: auto;
+  margin-right: -280px;
 }
 
 .nav a {
