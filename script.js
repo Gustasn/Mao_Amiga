@@ -36,13 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const revealElements = document.querySelectorAll('.reveal');
   const counters = document.querySelectorAll('.counter');
   const typingElements = document.querySelectorAll('[data-type-phrase]');
-  const splashScreen = document.getElementById('splash-screen');
-
-  if (splashScreen) {
-    setTimeout(() => {
-      splashScreen.classList.add('hidden');
-    }, 2000);
-  }
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {

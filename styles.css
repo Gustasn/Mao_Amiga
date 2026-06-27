@@ -22,33 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-#splash-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.7s ease, visibility 0.7s ease;
-}
-
-#splash-screen.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.splash-image {
-  width: min(80vw, 420px);
-  height: min(80vw, 420px);
-  background-image: url('splash.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -61,20 +34,20 @@ a {
 
 /* Header e Navegação */
 .header {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.92);
   color: var(--secondary-white);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
-  transition: padding 0.3s ease, box-shadow 0.3s ease;
+  transition: padding 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .header.scrolled {
-  padding: 1rem 0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
 }
 
 .header-content {
@@ -85,8 +58,8 @@ a {
 
 .logo h1 {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1.45rem;
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
@@ -99,12 +72,12 @@ a {
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
   align-items: center;
 }
 
 .nav a {
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.3s ease;
   color: var(--secondary-white);
 }
@@ -122,6 +95,7 @@ a {
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .hero::before,
@@ -407,7 +381,41 @@ a {
 
 /* Hero secundária */
 .hero-secondary {
-  background: linear-gradient(135deg, var(--primary-gold) 0%, #ff9500 100%);
+  background: linear-gradient(135deg, rgba(255, 247, 223, 0.98) 0%, rgba(255, 225, 135, 0.95) 55%, rgba(255, 193, 55, 0.92) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-secondary::before,
+.hero-secondary::after,
+.hero-secondary::nth-child(1)::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.45;
+  animation: float 10s ease-in-out infinite;
+}
+
+.hero-secondary::before {
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.65);
+  top: -40px;
+  right: 10%;
+}
+
+.hero-secondary::after {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.32);
+  bottom: -70px;
+  left: 2%;
+  animation-delay: 2s;
+}
+
+.hero-secondary::after {
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.25);
 }
 
 .hero-secondary .hero-text h2,
